@@ -71,7 +71,7 @@ StringCalculator objUnderTest;
 }
 
 
-TEST(string_calculator_add_When_Passed_A_Single_Number, returns_0_for_empty_string) {
+TEST_F(string_calculator_add_When_Passed_A_Single_Number, returns_0_for_empty_string) {
 	//Arrange
 	
 	string input = "";
@@ -83,7 +83,7 @@ int actualValue=objUnderTest.Add(input);
      //Assert - Fatal
 ASSERT_EQ(actualValue, expectedValue);
 }
-TEST(string_calculator_add_When_Passed_A_Single_Number, returns_1_for_1_string) {
+TEST_F(string_calculator_add_When_Passed_A_Single_Number, returns_1_for_1_string) {
 	//Arrange
 	
 	string input = "";
